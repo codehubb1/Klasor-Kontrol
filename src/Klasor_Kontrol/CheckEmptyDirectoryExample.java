@@ -28,13 +28,13 @@ public class CheckEmptyDirectoryExample
             while (s1.hasNextLine()){
                 ctr=ctr+1;
             }
-            String[] words=new String[ctr];
+            String[] str=new String[ctr];
             
             Scanner s2=new Scanner(new File(file));
             for (int i=0;i<ctr;i=i+1){
-           words[i]=s2.next();
+           str[i]=s2.next();
            }
-            return words;
+            return str;
             
         }
         
