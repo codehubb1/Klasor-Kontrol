@@ -25,8 +25,9 @@ public class CheckEmptyDirectoryExample
         try{
             
             Scanner s1=new Scanner(new File (file));
-            while (s1.hasNextLine()){
+            while (s1.hasNext()){
                 ctr=ctr+1;
+                s1.next();
             }
             String[] str=new String[ctr];
             
@@ -45,7 +46,7 @@ public class CheckEmptyDirectoryExample
         
 }*/
     
-    //String[] str= readArray("Dizinler.txt");
+    String[] str= readArray("Dizinler.txt");
     //int i=0;
    //for (int i=0;i<str.length;i=i+1){
     //System.out.println(str);
