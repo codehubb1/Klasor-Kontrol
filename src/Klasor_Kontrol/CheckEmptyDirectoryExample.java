@@ -12,13 +12,15 @@ import java.util.Scanner;
 
 public class CheckEmptyDirectoryExample
 {
-    String[] str = {
+    /* Diziyle çalışan bölüm
+         String[] str = {
 			"C:\\test\\test1",
 			"C:\\test\\test2"
                       
         };
+        */
     
-    /*public  String[] readArray(String file){
+    public  String[] readArray(String file){
         
               
          int ctr=0;
@@ -44,20 +46,14 @@ public class CheckEmptyDirectoryExample
         return null;
        
         
-}*/
+}
     
     String[] str= readArray("Dizinler.txt");
-    //int i=0;
-   //for (int i=0;i<str.length;i=i+1){
-    //System.out.println(str);
-//}
-    
-    
+ 
    
  public String[] checkFolders() {
      
-           //String[] str= readArray("Dizinler.txt");
-           
+ 
                 String[] result = new String[str.length];
 		String response;
 		for (int i=0; i<str.length;i++)
@@ -86,7 +82,7 @@ public class CheckEmptyDirectoryExample
 	{
             
             new CheckEmptyDirectoryExample().checkFolders();;
-     //new CheckEmptyDirectoryExample().readArray();;
+     
         }
 
       
